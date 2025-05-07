@@ -52,7 +52,7 @@ transition: fade-out
 
 # Controlling Forms In JavaScript
 Forms are Key for user input and interaction in web development. In oder to create dynamic and interactive websites, it is important to understand how to work with forms using javaScript. In order to access forms using javascript, document.forms is being used. It is a named-collection which means you can access forms using both their names and index. We could create a form with javaScript using the createElement() method.
-A form may have one or many fieldset elements inside it. They also have elements property that lists form controls inside them. The HTML fieldset element gets used to group several controls as well as labels (label) within a web form. We can access the Fieldset properties via the form.elements property.
+A form may have one or many fieldset elements inside it. They also have elements property that lists form controls inside them. The HTML fieldset element is used to group several controls as well as labels (label) within a web form. We can access the Fieldset properties via the form.elements property.
 
 <style>
 h1 {
@@ -112,7 +112,10 @@ console.log(user.form) //gets the form which the 'user' input belongs to;
 ---
 # Form Properties
 Form elements has different properties that allows us to interact with them programmatically.
-For instance, you can use the "value" property to access and modify form elements like the input and textarea. Thi property could be a string (input.value) or boolean(input.checked), for checkboxes and radio buttons. Unlike the input and textarea elements, the select element has a wider range of properties you can use to interact with a form, these properties are as follows:<br>.option<br>.value<br>.selectedIndex.
+For instance, you can use the "value" property to access and modify form elements like the input and textarea. This property could be a string (input.value) or boolean (input.checked), for checkboxes and radio buttons. Unlike the input and textarea elements, the select element has a wider range of properties you can use to interact with a form, these properties are as follows:
+- .option
+- .value
+- .selectedIndex.
 ---
 ---
 # Focusing: focus/blur
@@ -120,7 +123,7 @@ Managing focus and blur events is crucial to a web developer when making forms a
 ---
 ---
 # Blur
-When a user moves away from an input element especially by clicking on another element, the previously focused element starts to blur. Blur event helps indicates that a user has finished interacting with a specific field. An example of the use case of the blur event is as follow: 
+When a user moves away from an input element especially by clicking on another element, the previously focused element starts to blur. Blur event helps indicate that a user has finished interacting with a specific field. An example of the use case of the blur event is as follows: 
 ````
 input.onblur = function(){
   if (!input.value.includes('@')) {
@@ -137,7 +140,7 @@ This example is an email validation where the input is blurred out when the user
 A change event is an event that fires when there is a change in a form and the user has already finished interacting with the input field. In other form elements like checkboxes and  radio button, the change gets triggered as soon as the value is changed.
 
 ## Input
-The input event doesn't require the user to finish interaction with the input field, instead, the event starts at the slightest modification. It ideal in scenarios where there is need for immediate feedback like showing the password strength or live search.
+The input event doesn't require the user to finish interacting with the input field, instead, the event starts at the slightest modification. It is ideal in scenarios where there is need for immediate feedback like showing the password strength or live search.
 ---
 ---
 ## Cut, Copy and Paste
@@ -199,7 +202,7 @@ Apparently, pressing enter to submit a form simulates a click event even when no
 ---
 ---
 ## The <kbd>form.submit()</kbd> Method
-WHen a developer programmatically submit a form without user interaction, the form.submit() method is used. This method is used in scenarios like, surveys, or sign-up wizards, where each steps submits partial data silently without the user noticing.<br>
+When a developer programmatically submits a form without user interaction, the form.submit() method is used. This method is used in scenarios like, surveys, or sign-up wizards, where each steps submits partial data silently without the user noticing.<br>
 Code example:
 ````
 function createForm() {
@@ -232,7 +235,7 @@ There are three important aspects of form validation:<br>
 ---
 ## The novalidate Attribute
 When a web developers wants to implement custom validation logic, or use JavaScript library for form validation, they use the novalidate attribute to disable the browser's default validation behavior. <br>
-NB: Iy is used on the form element<br>
+NB: It is used on the form element<br>
 For example
 ````
 <form novalidate>
